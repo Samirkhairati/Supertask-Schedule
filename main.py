@@ -24,7 +24,7 @@ for i in range(n):
 	print(mint(a)+'-'+mint(a+f)+' →')
 	f+=d
 	a+=f+b
-s = (n/2)*(2*x+(n-1)*d)//60
+s = (n/2)*(2*x+(n-1)*d)
 
-print('\nHours Studied: ',s)
-print('Total Hours: ',s+b*n//60)
+print('\nHours Studied: ',int(s//60),':',int(s%60))
+print('Total Hours: ',int((s+b*n)//60),':',int((s+b*n)%60))
